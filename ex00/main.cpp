@@ -5,6 +5,7 @@ int main()
 {
 	int a = 2;
 	int b = 3;
+	int k = 2;
 
 	std::cout << "===INT===" << std::endl;
 	std::cout << "a = " << a << ", b = " << b << std::endl;
@@ -16,6 +17,12 @@ int main()
 
 	std::cout << "min( a, b ) = " << ::min( a, b ) << std::endl;
 	std::cout << "max( a, b ) = " << ::max( a, b ) << std::endl;
+
+	std::cout << std::endl;
+	std::cout << "b = " << b << " (" << &b << ")" << std::endl;
+	std::cout << "k = " << k << " (" << &k << ")" << std::endl;
+	std::cout << "min( k, b ) = " << &::min( k, b ) << std::endl;
+	std::cout << "max( k, b ) = " << &::max( k, b ) << std::endl;
 
 	std::string c = "chaine1";
 	std::string d = "chaine2";
