@@ -10,4 +10,10 @@ void iter(T const *array, int len, void (*f)(const T&))
 		(*f)(array[i]);
 }
 
+template <typename T>
+void printValues(T const &value)
+{
+	std::cout << value << " ";
+}
+
 #endif //ITER_HPP
